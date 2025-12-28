@@ -1,0 +1,57 @@
+header {
+  align-items: flex-start;
+  background: var(--HeaderBackgroundColor);
+  color: var(--HeaderFontColor);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 28vh;
+  justify-content: flex-start;
+  margin: 0 auto;
+  user-select: none;
+  width: 1000px;
+}
+
+.todo__h1 {
+  align-items: center;
+  color: var(--HeaderFontColor);
+  display: flex;
+  font-size: var(--HeaderTitleFontSize);
+  font-weight: var(--FontWeight);
+  gap: 25px;
+  margin: 10px auto;
+  text-shadow: var(--TextShadow);
+}
+
+.loading__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--BodyBackgroundColor);
+  font-size: 20px;
+  color: white;
+  font-weight: var(--FontWeight);
+  border-top: 2px solid #555;
+}
+
+.todo__inputerror__wrapper {
+  height: 60px;
+  width: 100%;
+}
+
+.todo__inputerror {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--ErrorMessageColor);
+  border: var(--ErrorBorder);
+  background: var(--ErrorBackgroundColor);
+  width: 60%;
+  height: 45px;
+  font-size: 1.4em;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 210px;
+  font-weight: var(--FontWeight);
+  border-radius: var(--BorderRadius);
+}

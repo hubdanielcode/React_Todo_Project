@@ -1,0 +1,42 @@
+PROJETO FRONT-END - TO-DO LIST COM API
+
+
+OBJETIVO:
+
+Criar uma aplicação de Lista de Tarefas completa utilizando HTML, CSS e JavaScript, consumindo
+uma API para armazenar, listar e modificar as tarefas. -> API É O JSON SERVER 
+
+FUNCIONALIDADES:
+
+- Adicionar nova tarefa            |   -> OU SEJA, CRIAR CRUD
+- Marcar tarefa como concluída     |
+- Editar tarefa existente          |
+- Excluir tarefa                   |
+
+- Buscar dados de uma API externa
+- Persistir dados com requisições POST, GET, PUT e DELETE
+
+REQUISITOS TÉCNICOS:
+
+• HTML para estruturar a página
+• CSS para estilização responsiva e visual moderno
+• JavaScript para interatividade e manipulação do DOM
+• Fetch API + async/await para consumo de dados
+• Uso de JSON-server ou outra API fake
+• Uso de npm para dependências
+• Controle de versão com Git e envio para GitHub
+
+OBJETIVO PROFISSIONAL:
+
+Este projeto demonstra habilidades essenciais esperadas no mercado para vagas de front-end
+júnior, como:
+- Organização de código
+- Noções de fluxo assíncrono
+- Consumo de APIs
+- Uso de ferramentas reais de desenvolvimento
+
+RESULTADO FINAL:
+
+Uma aplicação funcional, online e versionada, que pode ser exibida em portfólio profissional e
+utilizada em processos seletivos.
+import { useState } from "react"; import { FaRegTrashAlt } from "react-icons/fa"; import { FiEdit } from "react-icons/fi"; import "./SingleTask.css"; const SingleTask = ({ task, handleComplete, handleEdit, handleDelete }) => { const [isEditing, setIsEditing] = useState(false); const [text, setText] = useState(task.title); const saveEdit = () => { if (!text.trim()) { setIsEditing(false); return; } handleEdit(task.id, text); setIsEditing(false); }; return ( <li className="individual__task"> <div className="task__line__wrapper"> <input className="input__checkbox" type="checkbox" onChange={() => handleComplete(task.id)} checked={task.complete} /> {isEditing ? ( <input className="edit__input" value={text} onChange={(e) => setText(e.target.value)} autoFocus onBlur={saveEdit} onKeyDown={(e) => { if (e.key === "Enter") saveEdit(); if (e.key === "Escape") { setText(task.title); setIsEditing(false); } }} /> ) : ( <label style={ task.complete ? { textDecoration: "line-through", color: "#8585858e" } : null } > {task.title} </label> )} <FiEdit className="edit__icon" role="button" cursor="pointer" onClick={() => setIsEditing(true)} /> <FaRegTrashAlt className="trash__icon" role="button" cursor="pointer" onClick={() => handleDelete(task.id)} /> </div> </li> ); }; export { SingleTask }; explica

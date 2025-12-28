@@ -1,0 +1,14 @@
+ul {
+  user-select: none;
+}
+
+.whole__tasklist {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: auto;
+  background: var(--BodyBackgroundColor);
+  border-top: 2px solid #555;
+  padding: 30px;
+  gap: 10px;
+}

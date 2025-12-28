@@ -1,0 +1,54 @@
+.todo__row__wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.todo__input__wrapper {
+  align-items: center;
+  background: white;
+  border-radius: var(--BorderRadius);
+  border: var(--Border);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  margin-top: 30px;
+  outline: 1px solid black;
+  padding: 5px;
+  width: 70%;
+  color: black;
+  font-weight: var(--FontWeight);
+}
+
+.todo__input__icon {
+  color: black;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+.todo__input::placeholder {
+  color: rgba(0, 0, 0, 0.685);
+  font-weight: var(--FontWeight);
+  font-size: 20px;
+}
+
+.todo__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+.todo__row__wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+  margin: 0 auto;
+  width: 70%;
+}

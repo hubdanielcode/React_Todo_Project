@@ -1,0 +1,84 @@
+.todo__addbutton {
+  background: var(--ButtonBackgroundColor);
+  border-radius: var(--BorderRadius);
+  border: var(--Border);
+  color: var(--ButtonTextColor);
+  cursor: pointer;
+  font-weight: var(--FontWeight);
+  margin-top: 18px;
+  padding: 6px;
+  height: 45px;
+}
+
+.todo__addbutton__sign {
+  font-size: 20px;
+  font-weight: var(--FontWeight);
+}
+
+.next__page,
+.previous__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c1c4e;
+  border: #2c1c4e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  font-size: var(--BodyTextFontSize);
+  font-weight: var(--FontWeight);
+  text-shadow: var(--TextShadow);
+}
+
+.tasklist__buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(196, 194, 194, 0.7);
+  border: var(--TaskBorder);
+  border-radius: 40px;
+  margin-top: 15px;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: var(--BodyTextFontSize);
+  font-weight: var(--FontWeight);
+}
+
+.next__page:hover,
+.previous__page:hover {
+  background: #6d3fc0;
+  border: #6d3fc0;
+  color: white;
+}
+
+.next__page.disabled,
+.previous__page.disabled {
+  background: rgba(44, 28, 78, 0.55);
+  color: rgba(255, 255, 255, 0.55);
+  cursor: not-allowed;
+}
+
+.page__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #2c1c4e;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: var(--FontWeight);
+}
+
+.page__number.active {
+  color: white;
+  background-color: #6d3fc0;
+  border: var(--TaskBorder);
+  border-color: #6d3fc0;
+  font-weight: var(--FontWeight);
+}

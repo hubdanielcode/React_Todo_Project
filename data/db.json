@@ -1,0 +1,59 @@
+{
+  "tasks": [
+    {
+      "id": "3cd8ce49-a7a9-46b6-8bca-5106b47278b4",
+      "complete": false,
+      "title": "Cuidar dos gatos"
+    },
+    {
+      "id": "84529af1-7107-41ff-9c65-8ea35914d68e",
+      "complete": false,
+      "title": "Limpar os gatos"
+    },
+    {
+      "id": "90801b26-aec0-4bda-acad-0ecd48c210b7",
+      "complete": false,
+      "title": "Brincar com os gatos"
+    },
+    {
+      "id": "61a81a39-93cc-46ab-862d-e8b319dabbd7",
+      "complete": false,
+      "title": "Alimentar os gatos"
+    },
+    {
+      "id": "78488141-d65f-4945-a681-b7e902f26101",
+      "complete": false,
+      "title": "Escovar os gatos"
+    },
+    {
+      "id": "8c359906-6a53-4a53-a30d-f923f33fcc5e",
+      "complete": false,
+      "title": "Trocar a água dos gatos"
+    },
+    {
+      "id": "3bb9c0c6-a641-4d0d-a658-17737710389d",
+      "complete": false,
+      "title": "Colocar os gatos na janela"
+    },
+    {
+      "id": "6bb6450b-5550-4af1-8758-22d91e7634ad",
+      "complete": false,
+      "title": "Não dar banho nos gatos"
+    },
+    {
+      "id": "afca1c1b-74de-4f67-ba61-2681eea515e7",
+      "complete": false,
+      "title": "Passear com os gatos"
+    },
+    {
+      "id": "ca5a2bf6-b296-4bea-b96a-0b275491c6ee",
+      "complete": false,
+      "title": "Comprar as coleiras dos gatos"
+    },
+    {
+      "id": "d6fcc378-d0d9-4872-b713-d14edb5a99e7",
+      "complete": false,
+      "title": "Comprar sachê pros gatos"
+    }
+  ]
+}
