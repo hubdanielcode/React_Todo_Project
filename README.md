@@ -43,9 +43,11 @@ http://localhost:3500/tasks
 
  <h2> Estrutura dos dados: </h2>
  <br>
- 
+
+
+```json
 {
-  "id": "uuid",
+    "id": "uuid",
   "complete": false,
   "title": "Descrição da tarefa"
 }
