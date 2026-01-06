@@ -51,7 +51,8 @@ http://localhost:3500/tasks
   "complete": false,
   "title": "Descrição da tarefa"
 }
-
+```
+<br>
 
 <h3> ▶️ Como Executar o Projeto? </h3>
 
