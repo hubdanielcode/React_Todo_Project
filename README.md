@@ -60,7 +60,7 @@ npm run dev
 
 Acesse no navegador:
 
-http://localhost:517 (ou a porta exibida no terminal)
+http://localhost:5173 (ou a porta exibida no terminal)
 
 ## ⚙️ Conceitos aplicados
 
