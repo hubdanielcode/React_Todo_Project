@@ -20,7 +20,6 @@ const App = () => {
   const indexStart = (page - 1) * pageLimit;
   const indexEnd = indexStart + pageLimit;
   const paginatedTasks = tasks.slice(indexStart, indexEnd);
-  const hasMore = page < totalPages;
 
   /* - Fetch: Acontece uma única vez, no momento em que a página é carregada pela primeira vez. - */
 
@@ -30,7 +29,7 @@ const App = () => {
         const response = await fetch(myAPI);
         if (!response.ok) {
           throw new Error(
-            "Falha ao buscar os dados. Por favor, tente novamente!"
+            "Falha ao buscar os dados. Por favor, tente novamente!",
           );
         }
         const result = await response.json();
@@ -82,7 +81,7 @@ const App = () => {
 
   const handleEdit = async (id, newTitle) => {
     const newTaskList = tasks.map((task) =>
-      task.id === id ? { ...task, title: newTitle } : task
+      task.id === id ? { ...task, title: newTitle } : task,
     );
     setTasks(newTaskList);
     const updateObject = {
@@ -102,7 +101,7 @@ const App = () => {
 
   const handleComplete = async (id) => {
     const newTaskList = tasks.map((task) =>
-      task.id === id ? { ...task, complete: !task.complete } : task
+      task.id === id ? { ...task, complete: !task.complete } : task,
     );
     setTasks(newTaskList);
 
@@ -180,7 +179,6 @@ const App = () => {
           handleDelete={handleDelete}
           handlePrevious={handlePrevious}
           handleNext={handleNext}
-          hasMore={page < totalPages}
           pages={pages}
           page={page}
           setPage={setPage}

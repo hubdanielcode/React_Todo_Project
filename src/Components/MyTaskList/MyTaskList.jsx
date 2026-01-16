@@ -12,7 +12,6 @@ const MyTaskList = ({
   handleComplete,
   handlePrevious,
   handleNext,
-  hasMore,
   pages,
   page,
   setPage,
@@ -37,6 +36,7 @@ const MyTaskList = ({
               <IoMdArrowDropleft />
             </span>
           }
+          disabled={currentPage === 1}
         />
         {pages.map((pageNumber) => (
           <span
@@ -50,14 +50,13 @@ const MyTaskList = ({
         ))}
 
         <Button
-          className={`next__page ${!hasMore ? "disabled" : ""}`}
           onClick={handleNext}
           text={
             <span>
               <IoMdArrowDropright />
             </span>
           }
-          disabled={!hasMore}
+          disabled={currentPage === totalPages}
         />
       </div>
     </ul>
