@@ -56,8 +56,8 @@
   color: white;
 }
 
-.next__page.disabled,
-.previous__page.disabled {
+.next__page:disabled,
+.previous__page:disabled {
   background: rgba(44, 28, 78, 0.55);
   color: rgba(255, 255, 255, 0.55);
   cursor: not-allowed;

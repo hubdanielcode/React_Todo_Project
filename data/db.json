@@ -1,9 +1,94 @@
 {
   "tasks": [
     {
-      "id": "bd7e6da3-2e9a-40ab-8b84-12bcb8589703",
+      "id": "9652955e-a4df-4f55-a8b3-1f2b021cc11a",
       "complete": false,
-      "title": "Não irritar o samorai"
+      "title": "Tarafa 1"
+    },
+    {
+      "id": "decd4c2f-4e14-4149-862c-67edbd9cab70",
+      "complete": false,
+      "title": "Tarefa 2"
+    },
+    {
+      "id": "5f41b902-ca14-473f-a702-3949ca0e6f3f",
+      "complete": false,
+      "title": "Tarefa 3"
+    },
+    {
+      "id": "e485a264-ca10-46d6-ad04-51aeacdbdeed",
+      "complete": false,
+      "title": "Tarefa 4"
+    },
+    {
+      "id": "ca15bae3-7e88-4554-bfab-883675431da0",
+      "complete": false,
+      "title": "Tarefa 5"
+    },
+    {
+      "id": "24e6de38-e01b-43ab-b628-8604ed9e691a",
+      "complete": false,
+      "title": "Tarefa 6"
+    },
+    {
+      "id": "0af8f9ad-2265-4366-bf30-116694f42a01",
+      "complete": false,
+      "title": "Tarefa 7"
+    },
+    {
+      "id": "d52f529e-5a1b-4076-a72a-3c17f29a9726",
+      "complete": false,
+      "title": "Tarefa 8"
+    },
+    {
+      "id": "2e0d326a-0a84-446a-a5c4-2cd8df4cd570",
+      "complete": false,
+      "title": "Tarefa 9"
+    },
+    {
+      "id": "6df9ee6d-4c16-42a6-981c-5d9755913355",
+      "complete": false,
+      "title": "Tarefa 10"
+    },
+    {
+      "id": "e4e7cf40-b212-446b-bc1e-362f402661ba",
+      "complete": false,
+      "title": "Tarefa 11"
+    },
+    {
+      "id": "6b966e73-0c7e-49ed-a4d9-ca0800073cbb",
+      "complete": false,
+      "title": "Tarefa 12"
+    },
+    {
+      "id": "794f26c6-ab9d-45f1-94a1-fa0bf3806c2a",
+      "complete": false,
+      "title": "Tarefa 13"
+    },
+    {
+      "id": "77795d8f-beb8-4ef4-8e0b-083ce562ffed",
+      "complete": false,
+      "title": "Tarefa 14"
+    },
+    {
+      "id": "401e7da9-4e26-4526-9357-cdb0d5b38f68",
+      "complete": false,
+      "title": "Tarefa 15"
+    },
+    {
+      "id": "d800d0fc-bd0b-4aee-8429-503f4891bf3c",
+      "complete": false,
+      "title": "Tarefa 16"
+    },
+    {
+      "id": "02f59870-a5ed-4d24-b5ce-e3a7bca892ec",
+      "complete": false,
+      "title": "Tarefa 17"
+    },
+    {
+      "id": "d7830327-7246-4a6d-901b-e037b45593b0",
+      "complete": false,
+      "title": "Tarefa 18"
     }
   ]
 }

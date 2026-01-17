@@ -14,7 +14,9 @@ const MyTaskList = ({
   handleNext,
   pages,
   page,
-  setPage,
+  currentPage,
+  setCurrentPage,
+  totalPages,
 }) => {
   return (
     <ul className="whole__tasklist">
@@ -31,25 +33,26 @@ const MyTaskList = ({
         <Button
           className="previous__page"
           onClick={handlePrevious}
+          disabled={currentPage === 1}
           text={
             <span>
               <IoMdArrowDropleft />
             </span>
           }
-          disabled={currentPage === 1}
         />
         {pages.map((pageNumber) => (
           <span
             key={pageNumber}
-            onClick={() => setPage(pageNumber)}
+            onClick={() => setCurrentPage(pageNumber)}
             role="button"
-            className={`page__number ${pageNumber === page ? "active" : ""}`}
+            className={`page__number ${pageNumber === currentPage ? "active" : ""}`}
           >
             {pageNumber}
           </span>
         ))}
 
         <Button
+          className="next__page"
           onClick={handleNext}
           text={
             <span>

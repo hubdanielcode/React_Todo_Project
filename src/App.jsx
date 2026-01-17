@@ -12,12 +12,12 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [newTask, setNewTask] = useState("");
   const [tasks, setTasks] = useState([]);
-  const [page, setPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const pageLimit = 5;
   const totalPages = Math.ceil(tasks.length / pageLimit);
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
-  const indexStart = (page - 1) * pageLimit;
+  const indexStart = (currentPage - 1) * pageLimit;
   const indexEnd = indexStart + pageLimit;
   const paginatedTasks = tasks.slice(indexStart, indexEnd);
 
@@ -34,8 +34,8 @@ const App = () => {
         }
         const result = await response.json();
         setTasks(result);
-        if (page > totalPages) {
-          setPage(totalPages || 1);
+        if (currentPage > totalPages) {
+          setCurrentPage(totalPages || 1);
         }
       } catch (error) {
         setFetchError("Falha ao buscar os dados. Por favor, tente novamente!");
@@ -152,11 +152,11 @@ const App = () => {
   /* - Trocando de página na lista de tarefas - */
 
   const handlePrevious = () => {
-    setPage((prev) => Math.max(prev - 1, 1));
+    setCurrentPage(currentPage - 1);
   };
 
   const handleNext = () => {
-    setPage((prev) => Math.min(prev + 1, totalPages));
+    setCurrentPage(currentPage + 1);
   };
 
   return (
@@ -180,8 +180,9 @@ const App = () => {
           handlePrevious={handlePrevious}
           handleNext={handleNext}
           pages={pages}
-          page={page}
-          setPage={setPage}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalPages={totalPages}
         />
       )}
     </div>
